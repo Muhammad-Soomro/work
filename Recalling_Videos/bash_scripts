@@ -1,0 +1,8 @@
+To get the number of row we want in the csv
+{ cat data.csv | head -1; cat data.csv | awk 'NR>1' | shuf -n 1500;} | tqdm > t.csv
+
+To move the data from t.csv to the *.csv we want 
+mv t.csv data.csv
+
+To run the recall request 
+cat data.csv | python generate-recall-request.py -f - | tqdm > requested.csv

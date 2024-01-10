@@ -1,0 +1,14 @@
+{
+    "camera_face": "road_facing",
+    "source_type": "recalled",
+    "tags": "testing_tt_v30102",
+    "added_by": "soomro",
+    "fps": 2,
+    "width": 1280,
+    "height": 720,
+    "cam_init_source": "api",
+    "cam_init_model_version": "0.2.1",
+    "cam_init_model_type": "cloud",
+    "overwrite": 1
+  }
+  

@@ -1,0 +1,40 @@
+{
+    "testset":"tt_v30102_cf",
+    "event_type_id":1,
+    "pe":[{
+            "name":"pe_3003-run-1",
+            "description":"",
+            "create": "yes",
+	    "unified_model_version":"3003",
+	    "unified_model_type":"hubble",
+            "ff_pe_version":2,
+            "ff_pe_params":{},
+            "gpu":0
+        }],
+    "ae":[{
+            "name": "ae-pe_3003-run-1",
+            "description": "",
+            "create": "yes",
+            "ae_version": "CF12000",
+            "prefilter_version": ["CFXXX0000"],
+            "prefilter_params": {},
+            "postfilter_version": ["CFXYZ0000"],
+            "postfilter_params": {},
+            "ae_params": {
+                "min_event_duration": 15,
+                "tolerance_duration": 5,
+                "min_speed": 54,
+                "width_delta": 0.3,
+                "t2h_thresh": 1.0,
+                "voting_thresh": 0.5,
+                "inc_t2h_thresh": 0.7,                
+                "dsf_overlap_thresh": 0.5,
+                "dsf_min_frame_thresh": 5,
+                "dsf_min_prop_thresh": 0.7
+            }
+        }],
+    "report":[{
+            "create":"yes",
+	    "name":"reports"
+    }]
+}
